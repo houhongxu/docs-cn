@@ -26,7 +26,7 @@ import { defineConfig } from 'vite'
 // ---cut---
 export default defineConfig({
   optimizeDeps: {
-    include: ['esm-dep > cjs-dep'],
+    exclude: ['esm-dep > cjs-dep'],
   },
 })
 ```
